@@ -14,7 +14,7 @@ public class SwoopingActivation : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		endPosition = this.transform.position;
+		endPosition = transform.localPosition;
 
 		// create a random start position which is limited between the min and max positions
 		float randX = Random.Range(-randomness.x, randomness.x);
@@ -31,6 +31,6 @@ public class SwoopingActivation : MonoBehaviour {
 		// keep moving towards the endPosition
 		float distCovered = (Time.time - startTime) * moveSpeed;
 		float fracJourney = distCovered / journeyLength;
-		transform.position = Vector3.Lerp(startPosition, endPosition, fracJourney);
+		transform.localPosition = Vector3.Lerp(startPosition, endPosition, fracJourney);
 	}
 }
