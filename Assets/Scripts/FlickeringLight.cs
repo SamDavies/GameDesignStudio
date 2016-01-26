@@ -8,12 +8,8 @@ public class FlickeringLight : MonoBehaviour {
 	public float maxIntensity;
 	public float maxChangePerUpdate;
 
-	// record the starting intensity
-	private float startIntensity;
-
 	// Use this for initialization
 	void Start () { 
-		startIntensity = light.intensity;
 	}
 	
 	// Update is called once per frame
