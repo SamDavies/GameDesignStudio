@@ -3,10 +3,12 @@ using System.Collections;
 
 public class AbstractMoveActivator : AbstractActivator {
 
-	public float moveSpeed;
+	public float showMoveSpeed;
+	public float hideMoveSpeed;
 	protected Vector3 showPos;
 	protected Vector3 hidePos;
 
+	private float currentMoveSpeed;
 	private Vector3 startPosition;
 	private Vector3 endPosition;
 	private float startTime;
@@ -14,17 +16,15 @@ public class AbstractMoveActivator : AbstractActivator {
 
 	// initialise the variable used to calculate the postition lerping
 	protected void setUp() {
-		startPosition = showPos;
-		endPosition = hidePos;
-
-		startTime = Time.time;
+		// start by hiding
+		onDeactivate();
 		journeyLength = Vector3.Distance(startPosition, endPosition);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		// keep moving towards the endPosition
-		float distCovered = (Time.time - startTime) * moveSpeed;
+		float distCovered = (Time.time - startTime) * currentMoveSpeed;
 		float fracJourney = distCovered / journeyLength;
 		transform.localPosition = Vector3.Lerp(startPosition, endPosition, fracJourney);
 	}
@@ -34,6 +34,7 @@ public class AbstractMoveActivator : AbstractActivator {
 		startPosition = transform.localPosition;
 		endPosition = showPos;
 		startTime = Time.time;
+		currentMoveSpeed = showMoveSpeed;
 	}
 
 	public override void onDeactivate(){
@@ -41,5 +42,6 @@ public class AbstractMoveActivator : AbstractActivator {
 		startPosition = transform.localPosition;
 		endPosition = hidePos;
 		startTime = Time.time;
+		currentMoveSpeed = hideMoveSpeed;
 	}
 }
