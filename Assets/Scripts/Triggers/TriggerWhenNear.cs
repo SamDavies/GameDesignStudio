@@ -9,6 +9,9 @@ public class TriggerWhenNear : MonoBehaviour {
 	// the object to measure the distance to
 	public GameObject triggerObject;
 
+	// the object to measure the distance from
+	public GameObject originObject;
+
 	// the activator to activate when the object is too close
 	public AbstractActivator activator;
 
@@ -16,10 +19,10 @@ public class TriggerWhenNear : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		float distance = Vector3.Distance(triggerObject.transform.position, transform.position);
+		float distance = Vector3.Distance(triggerObject.transform.position, originObject.transform.position);
 
 		// activate when the target is too close
 		if(distance < activationDistance) {
