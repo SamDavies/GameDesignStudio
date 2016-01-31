@@ -4,18 +4,28 @@ using System.Collections;
 public class AbstractActivator : MonoBehaviour {
 
 	public bool activated = false;
+	public bool activateOnce = false;
+
+	private bool hasActivated = false;
 
 	public void activate() {
-		if(!activated){
-			activated = true;
-			onActivate();
+		// if set to activateOnce, only allow 1 activation
+		if(!activateOnce || !hasActivated){
+			hasActivated = true;
+			if(!activated){
+				activated = true;
+				onActivate();
+			}
 		}
 	}
 
 	public void deactivate() {
-		if(activated){
-			activated = false;
-			onDeactivate();
+		// never deactivate for a single use activation
+		if(!activateOnce){
+			if(activated){
+				activated = false;
+				onDeactivate();
+			}
 		}
 	}
 
