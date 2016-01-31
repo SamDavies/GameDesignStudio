@@ -17,8 +17,15 @@ public class AbstractMoveActivator : AbstractActivator {
 	// initialise the variable used to calculate the postition lerping
 	protected void setUp() {
 		// start by hiding
-		onDeactivate();
+		startPosition = showPos;
+		endPosition = hidePos;
+		startTime = Time.time;
+		currentMoveSpeed = hideMoveSpeed;
+
 		journeyLength = Vector3.Distance(startPosition, endPosition);
+		if(journeyLength <= 0){
+			Debug.logger.Log("Your start position and endposition are the same");
+		}
 	}
 	
 	// Update is called once per frame
