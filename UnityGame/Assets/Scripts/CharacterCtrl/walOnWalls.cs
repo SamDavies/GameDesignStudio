@@ -75,7 +75,7 @@ public class walOnWalls : MonoBehaviour
 
 	public MovementSettings movementSettings = new MovementSettings();
  
-	private float moveSpeed = 12;
+	private float moveSpeed = 50;
 	// move speed
 	private float turnSpeed = 90;
 	// turning speed (degrees/second)
