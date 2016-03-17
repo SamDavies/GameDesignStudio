@@ -21,7 +21,7 @@ public class YakRunAway : YakBehavouir {
 	}
 
 	public override void doNextAction(){
-		if(yak.agent.remainingDistance < 0.5f) {
+		if(yak.agent.remainingDistance < 2.0f) {
 			// choose the furthest point and move to it
 			yak.agent.SetDestination(this.getNextDestination());
 		}
@@ -41,13 +41,12 @@ public class YakRunAway : YakBehavouir {
 		Vector3 furthestPoint = randomPositions[0];
 		float furthestDistance = 0.0f;
 		foreach(Vector3 randomPosition in randomPositions) {
-			float distPlayerPoint = Vector3.Distance(randomPosition, this.yak.lastKnownPlayerPos);
+			float distPlayerPoint = Vector3.Distance(randomPosition, this.yak.eyes.getLastKnownPlayerPos());
 			if(distPlayerPoint > furthestDistance) {
 				furthestPoint = randomPosition;
 				furthestDistance = distPlayerPoint;
 			}
 		}
-		Debug.Log(furthestPoint);
 		return furthestPoint;
 	}
 }

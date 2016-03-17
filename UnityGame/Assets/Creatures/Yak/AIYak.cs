@@ -3,23 +3,24 @@ using System.Collections;
 
 public class AIYak : MonoBehaviour {
 
-	public Transform[] waypoints;
-	public int nextDest = 0;
+	public AIHerd herd;
+	public YakEyes eyes;
 
 	public int runAwayStepSize = 10;
 
 	public NavMeshAgent agent;
-	public Vector3 lastKnownPlayerPos = new Vector3(0, 0, 0);
 
 	// Behavouirs of the yak
 	private YakRunAway yakRunAway;
-	private YakFollowHerd yakFollowHerd ;
+	private YakFollowHerd yakFollowHerd;
+	private YakChaseHerd yakChaseHerd;
 	private YakBehavouir currentBehavouir;
 
 	// Use this for initialization
 	void Start () {
 		yakRunAway = new YakRunAway(this, runAwayStepSize);
 		yakFollowHerd = new YakFollowHerd(this); 
+		yakChaseHerd = new YakChaseHerd(this); 
 
 		agent = GetComponent<NavMeshAgent>();
 		this.setFollowHerd();
@@ -27,7 +28,21 @@ public class AIYak : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(herd.isHerdRunning()) {
+			setChaseHerd();
+		} else {
+			if(eyes.getIsPlayerSeen()){
+				setRunAway();
+			} else {
+				setFollowHerd();
+			}
+		}
+
 		currentBehavouir.doNextAction();
+	}
+
+	public bool isYakRunningAway() {
+		return currentBehavouir == yakRunAway;
 	}
 
 	public void setRunAway() {
@@ -37,11 +52,18 @@ public class AIYak : MonoBehaviour {
 
 	public void setFollowHerd() {
 		this.setBehavouir(yakFollowHerd);
-		Debug.Log("Following");
+		Debug.Log("Following Herd");
+	}
+
+	public void setChaseHerd() {
+		this.setBehavouir(yakChaseHerd);
+		Debug.Log("Chasing Herd");
 	}
 
 	private void setBehavouir(YakBehavouir newBehave) {
-		currentBehavouir = newBehave;
-		currentBehavouir.changeAgent();
+		if(currentBehavouir != newBehave) {
+			currentBehavouir = newBehave;
+			currentBehavouir.changeAgent();
+		}
 	}
 }
