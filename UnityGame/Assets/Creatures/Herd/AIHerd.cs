@@ -8,6 +8,7 @@ public class AIHerd: MonoBehaviour {
 	public int nextDest = 0;
 	public float pecentageBeforeRun = 0.5f;
 	public int runCoolDownLength = 10;
+	public float herdWidth = 20f;
 
 	private float heardRunCoolDown = Time.time;
 
@@ -42,6 +43,16 @@ public class AIHerd: MonoBehaviour {
 			setWalkWaypoints();
 		}
 		currentBehavouir.doNextAction();
+	}
+
+	/// <summary>
+	/// Gets a point relative to the index of the yak
+	/// </summary>
+	public Vector3 getFollowPoint(AIYak yak) {
+		float yakSpacing = this.herdWidth / yaks.Length;
+		int yakIndex = System.Array.IndexOf(yaks, yak);
+		float zOffset = -(this.herdWidth / 2f) + (yakIndex * yakSpacing);
+		return new Vector3(transform.position.x, transform.position.y + zOffset, transform.position.z);
 	}
 
 	public bool isHerdRunning() {

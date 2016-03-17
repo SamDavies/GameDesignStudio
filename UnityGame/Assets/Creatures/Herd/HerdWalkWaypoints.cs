@@ -16,7 +16,7 @@ public class HerdWalkWaypoints : YakBehavouir {
 	}
 
 	public override void doNextAction(){
-		if(herd.agent.remainingDistance < 0.5f) {
+		if(herd.agent.remainingDistance < 10f) {
 			herd.agent.SetDestination(herd.waypoints[herd.nextDest].position);
 			herd.nextDest = (herd.nextDest + 1) % herd.waypoints.Length;
 		}
