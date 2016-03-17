@@ -1,0 +1,773 @@
+fileFormatVersion: 2
+guid: cf29687e852444983a55eb0a185fadd3
+timeCreated: 1458227903
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: back.foot.l
+    100004: back.foot.l_end
+    100006: back.foot.r
+    100008: back.foot.r_end
+    100010: back.leg.l
+    100012: back.leg.r
+    100014: back.shoulder.l
+    100016: back.shoulder.r
+    100018: Bone.005
+    100020: Bone.006
+    100022: Bone.007
+    100024: Bone.007_end
+    100026: Camera
+    100028: chest.back
+    100030: chest.front
+    100032: chest.middle
+    100034: Cube
+    100036: front.foot.l
+    100038: front.foot.l_end
+    100040: front.foot.r
+    100042: front.foot.r_end
+    100044: front.leg.l
+    100046: front.leg.r
+    100048: front.shoulder.l
+    100050: front.shoulder.r
+    100052: Lamp
+    100054: Root
+    100056: tail
+    100058: tail_end
+    100060: //RootNode
+    400000: Armature
+    400002: back.foot.l
+    400004: back.foot.l_end
+    400006: back.foot.r
+    400008: back.foot.r_end
+    400010: back.leg.l
+    400012: back.leg.r
+    400014: back.shoulder.l
+    400016: back.shoulder.r
+    400018: Bone.005
+    400020: Bone.006
+    400022: Bone.007
+    400024: Bone.007_end
+    400026: Camera
+    400028: chest.back
+    400030: chest.front
+    400032: chest.middle
+    400034: Cube
+    400036: front.foot.l
+    400038: front.foot.l_end
+    400040: front.foot.r
+    400042: front.foot.r_end
+    400044: front.leg.l
+    400046: front.leg.r
+    400048: front.shoulder.l
+    400050: front.shoulder.r
+    400052: Lamp
+    400054: Root
+    400056: tail
+    400058: tail_end
+    400060: //RootNode
+    4300000: Cube
+    7400000: Armature|ArmatureAction
+    7400002: Armature|Run
+    7400004: Armature|Walk
+    7400006: Armature|YakWalk
+    7400008: Cube|Run
+    7400010: Cube|Walk
+    7400012: Cube|YakWalk
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/chest.front
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Root/chest.middle
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l/back.foot.l_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r/back.foot.r_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail/tail_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l/front.foot.l_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r/front.foot.r_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Run
+      takeName: Armature|Run
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/chest.front
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Root/chest.middle
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l/back.foot.l_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r/back.foot.r_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail/tail_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l/front.foot.l_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r/front.foot.r_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Walk
+      takeName: Armature|Walk
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/chest.front
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Root/chest.middle
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l/back.foot.l_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r/back.foot.r_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail/tail_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l/front.foot.l_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r/front.foot.r_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|YakWalk
+      takeName: Armature|YakWalk
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/chest.front
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Root/chest.middle
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l/back.foot.l_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r/back.foot.r_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail/tail_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l/front.foot.l_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r/front.foot.r_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cube|Run
+      takeName: Cube|Run
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/chest.front
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Root/chest.middle
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l/back.foot.l_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r/back.foot.r_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail/tail_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l/front.foot.l_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r/front.foot.r_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cube|Walk
+      takeName: Cube|Walk
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/chest.front
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Root/chest.middle
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l/back.foot.l_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r/back.foot.r_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail/tail_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l/front.foot.l_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r/front.foot.r_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cube|YakWalk
+      takeName: Cube|YakWalk
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/chest.front
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007
+        weight: 1
+      - path: Armature/Root/chest.front/Bone.005/Bone.006/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Root/chest.middle
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.l/back.leg.l/back.foot.l/back.foot.l_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/back.shoulder.r/back.leg.r/back.foot.r/back.foot.r_end
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail
+        weight: 1
+      - path: Armature/Root/chest.middle/chest.back/tail/tail_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l
+        weight: 1
+      - path: Armature/Root/front.shoulder.l/front.leg.l/front.foot.l/front.foot.l_end
+        weight: 1
+      - path: Armature/Root/front.shoulder.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r
+        weight: 1
+      - path: Armature/Root/front.shoulder.r/front.leg.r/front.foot.r/front.foot.r_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
