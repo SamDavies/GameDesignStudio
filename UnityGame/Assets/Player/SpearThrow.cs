@@ -7,6 +7,7 @@ public class SpearThrow : MonoBehaviour {
 	public Transform player;
 	public Transform playerCam;
 	public float throwPower;
+	public string animalTag;
 
 	private Rigidbody rigidbody;
 	private CapsuleCollider collider;
@@ -35,7 +36,7 @@ public class SpearThrow : MonoBehaviour {
 			}
 		}else if(this.transform.parent == playerCam) {
 			lowerSpear();
-		}else if(this.transform.parent == spearHolder && Input.GetButton("Fire1")) {
+		}else if(this.transform.parent != playerCam && this.transform.parent != player && Input.GetButton("Fire1")) {
 			pickUpSpear();
 		}
 	}
@@ -74,6 +75,18 @@ public class SpearThrow : MonoBehaviour {
 		// reset the transform
 		this.transform.localPosition = this.restPos;
 		this.transform.localEulerAngles = this.restRot;
+	}
+
+	void OnCollisionEnter(Collision collision) {
+		if(collision.collider.gameObject.tag == this.animalTag) {
+			rigidbody.velocity = Vector3.zero;
+			rigidbody.angularVelocity = Vector3.zero;
+
+			this.rigidbody.useGravity = false;
+			this.collider.enabled = false;
+
+			this.transform.parent = collision.collider.gameObject.transform;
+		}
 	}
 
 }

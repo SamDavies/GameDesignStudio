@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class YakEyes : MonoBehaviour {
+public class YakEyes: MonoBehaviour {
 
 	// the tag to trigger for
 	public string triggerTag;
