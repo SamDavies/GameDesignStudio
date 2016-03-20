@@ -17,7 +17,7 @@ public class YakFollowHerd : YakBehavouir {
 	}
 
 	public override void doNextAction(){
-		if(yak.agent.remainingDistance < 10.0f) {
+		if(yak.agent.remainingDistance < 15.0f) {
 			Vector3 goTo = yak.herd.getFollowPoint(yak);
 			yak.agent.SetDestination(goTo);
 		}

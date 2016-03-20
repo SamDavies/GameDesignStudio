@@ -11,15 +11,6 @@ public class PortalBehavior : MonoBehaviour
 
 	//Events
 
-	void Awake()
-	{
-		//Create the render texture
-		texture = new RenderTexture (Screen.width, Screen.height, 1);
-		GetComponent<MeshRenderer> ().material.SetTexture (0, texture);
-
-		partner.myCamera.targetTexture = texture;
-	}
-
 	void Update ()
 	{
 		RotateCamera ();

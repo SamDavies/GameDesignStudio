@@ -3,12 +3,12 @@ using System.Collections;
 
 public class YakRunAway : YakBehavouir {
 
-	private AIYak yak;
+	private AIYakAbstract yak;
 	private int moveDistance;
 
 	private Transform nextDestination;
 
-	public YakRunAway(AIYak yak, int moveDistance) {
+	public YakRunAway(AIYakAbstract yak, int moveDistance) {
 		this.yak = yak;
 		this.moveDistance = moveDistance;
 	}

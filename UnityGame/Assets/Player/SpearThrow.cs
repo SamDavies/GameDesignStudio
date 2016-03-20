@@ -86,6 +86,8 @@ public class SpearThrow : MonoBehaviour {
 			this.collider.enabled = false;
 
 			this.transform.parent = collision.collider.gameObject.transform;
+
+			collision.collider.gameObject.GetComponent<AIYakSimple>().killYak();
 		}
 	}
 

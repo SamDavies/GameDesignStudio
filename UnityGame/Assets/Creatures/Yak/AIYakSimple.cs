@@ -1,38 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AIYak : AIYakAbstract {
+public class AIYakSimple : AIYakAbstract {
 
+	public Animator animator;
+	public int nextDest = 0;
 	public int runAwayStepSize = 10;
+	public bool isAlive = true;
 
 	// Behavouirs of the yak
 	private YakRunAway yakRunAway;
-	private YakFollowHerd yakFollowHerd;
-	private YakChaseHerd yakChaseHerd;
+	private YakFollowWaypoints yakFollowWaypoints;
 
 	// Use this for initialization
 	void Start () {
 		yakRunAway = new YakRunAway(this, runAwayStepSize);
-		yakFollowHerd = new YakFollowHerd(this); 
-		yakChaseHerd = new YakChaseHerd(this); 
+		yakFollowWaypoints = new YakFollowWaypoints(this);
 
 		agent = GetComponent<NavMeshAgent>();
-		this.setFollowHerd();
+		this.setFollowWaypoints();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(herd.isHerdRunning()) {
-			setChaseHerd();
-		} else {
+		if(isAlive) {
 			if(eyes.getIsPlayerSeen()){
 				setRunAway();
 			} else {
-				setFollowHerd();
+				setFollowWaypoints();
 			}
-		}
 
-		this.currentBehavouir.doNextAction();
+			currentBehavouir.doNextAction();
+		}
+	}
+
+	public void killYak(){
+		isAlive = false;
+		animator.SetBool("isAlive", isAlive);
 	}
 
 	public bool isYakRunningAway() {
@@ -44,14 +48,9 @@ public class AIYak : AIYakAbstract {
 		Debug.Log("Running Away!");
 	}
 
-	public void setFollowHerd() {
-		this.setBehavouir(yakFollowHerd);
-		Debug.Log("Following Herd");
-	}
-
-	public void setChaseHerd() {
-		this.setBehavouir(yakChaseHerd);
-		Debug.Log("Chasing Herd");
+	public void setFollowWaypoints() {
+		this.setBehavouir(yakFollowWaypoints);
+		Debug.Log("Following Waypoints");
 	}
 
 	private void setBehavouir(YakBehavouir newBehave) {
