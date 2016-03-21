@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{f867180d-a2fc-4f79-8f99-028094782aea}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.44222222222222224</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/StepsOnSand2 {54383311-806d-4313-912a-6ed194a44852}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{f95f09f3-ff44-4248-a7ff-f1e50523192b}</destination>
+        </relationship>
+    </object>
+</objects>

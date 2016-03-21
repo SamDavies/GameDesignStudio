@@ -38,6 +38,7 @@ public class AIYakSimple : AIYakAbstract {
 		bool wasJustKilled = isAlive;
 		isAlive = false;
 		animator.SetBool("isAlive", isAlive);
+		agent.enabled = false;
 		return wasJustKilled;
 	}
 

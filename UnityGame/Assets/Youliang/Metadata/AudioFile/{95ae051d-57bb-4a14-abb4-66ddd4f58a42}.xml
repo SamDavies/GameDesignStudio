@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{95ae051d-57bb-4a14-abb4-66ddd4f58a42}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.71859410430838999</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/FootStep_5  {80ffe39a-21b1-4028-a7ca-d5be9e323b3e}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{f95f09f3-ff44-4248-a7ff-f1e50523192b}</destination>
+        </relationship>
+    </object>
+</objects>

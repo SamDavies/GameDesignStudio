@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="MixerGroup" id="{bbc56777-3bda-4242-8c5b-48378fa66bd3}">
+        <property name="name">
+            <value>Character</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{4e8709aa-3663-4cc0-a6fe-dff4f04fa5ad}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{0c17b775-bb00-4064-8130-13a884b11e75}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{05c89895-5094-4734-8637-a7e1846b51fc}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{4e8709aa-3663-4cc0-a6fe-dff4f04fa5ad}">
+        <relationship name="effects">
+            <destination>{ce8d6878-9a28-463d-9eca-0d48cd88db1d}</destination>
+            <destination>{0702fcd5-4994-4f36-82b0-ca5d16dee5c6}</destination>
+            <destination>{af6f6ad1-e1c7-4474-ad91-66df748df62a}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{0c17b775-bb00-4064-8130-13a884b11e75}"/>
+    <object class="MixerSend" id="{ce8d6878-9a28-463d-9eca-0d48cd88db1d}">
+        <property name="inputFormat">
+            <value>2</value>
+        </property>
+        <relationship name="mixerReturn">
+            <destination>{47672313-04c8-40a4-8421-5443718a97e9}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusFader" id="{0702fcd5-4994-4f36-82b0-ca5d16dee5c6}"/>
+    <object class="PluginEffect" id="{af6f6ad1-e1c7-4474-ad91-66df748df62a}">
+        <relationship name="plugin">
+            <destination>{1474b363-b0dc-4a72-928b-67a8239d5316}</destination>
+        </relationship>
+    </object>
+    <object class="Plugin" id="{1474b363-b0dc-4a72-928b-67a8239d5316}">
+        <property name="identifier">
+            <value>FMOD Lowpass Simple</value>
+        </property>
+        <property name="uiName">
+            <value>Lowpass Simple</value>
+        </property>
+        <relationship name="pluginParameters">
+            <destination>{3a31ae6d-f319-49cf-86c8-024c8b3365c5}</destination>
+        </relationship>
+    </object>
+    <object class="FloatPluginParameter" id="{3a31ae6d-f319-49cf-86c8-024c8b3365c5}">
+        <property name="name">
+            <value>Cutoff freq</value>
+        </property>
+        <property name="units">
+            <value>hz</value>
+        </property>
+        <property name="curve">
+            <value>LinearPiecewiseCurveStrategy{(0.000000,10.000000)(1.000000,100.000000)(2.000000,400.000000)(3.000000,750.000000)(4.000000,1250.000000)(5.000000,2000.000000)(6.000000,3200.000000)(7.000000,5500.000000)(8.000000,10000.000000)(9.000000,18000.000000)(10.000000,22000.000000)}</value>
+        </property>
+        <property name="defaultValue">
+            <value>5000</value>
+        </property>
+        <property name="value">
+            <value>5000</value>
+        </property>
+    </object>
+</objects>

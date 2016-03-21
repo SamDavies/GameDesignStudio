@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{8dc9be70-8b7a-41f9-aa27-229f928c8d61}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>20.280000000000001</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/Reverb_IR {7b00d4c2-99fc-402d-8247-38cc6c74cc7f}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{d3f69360-b524-4009-9658-c9f1079637ac}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -57,7 +57,7 @@
             <destination>{d654bcd0-e730-4bbe-9288-533fab3f0af5}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{05c89895-5094-4734-8637-a7e1846b51fc}</destination>
+            <destination>{bbc56777-3bda-4242-8c5b-48378fa66bd3}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{b12c230e-ec0c-4f0d-9efb-10996bcdef84}"/>
@@ -248,7 +248,7 @@
             <value>0.35862068965517235</value>
         </property>
         <property name="value">
-            <value>-34.8365211</value>
+            <value>-26</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{0f7fe956-cc22-494a-b12c-5e58751428cd}">
@@ -256,7 +256,7 @@
             <value>0.32413793103448274</value>
         </property>
         <property name="value">
-            <value>-80</value>
+            <value>-52.6058083</value>
         </property>
         <property name="curveShape">
             <value>0.5</value>
@@ -270,7 +270,7 @@
             <value>0.32551724137931032</value>
         </property>
         <property name="value">
-            <value>-22</value>
+            <value>-9</value>
         </property>
         <property name="curveShape">
             <value>0.5</value>
@@ -284,7 +284,7 @@
             <value>0.35999999999999988</value>
         </property>
         <property name="value">
-            <value>-61.333313</value>
+            <value>-29.7142811</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{379b0247-27dc-4d87-8f21-08b77fcf3fc3}"/>

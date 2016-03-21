@@ -26,12 +26,12 @@ public class SpearThrow : MonoBehaviour {
 	FMOD.Studio.EventInstance raiseSpearSound;
 
 	void StopAllPlayerEvents() {
-		FMOD.Studio.Bus playerBus = FMODUnity.RuntimeManager.GetBus("bus:/player");
-		playerBus.stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
+		
 	}
 
 	void OnDestroy() {
-		StopAllPlayerEvents();
+		FMOD.Studio.Bus playerBus = FMODUnity.RuntimeManager.GetBus("bus:/player");
+		playerBus.stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
 		raiseSpearSound.release();
 	}
 
@@ -41,7 +41,6 @@ public class SpearThrow : MonoBehaviour {
 		collider = GetComponent<CapsuleCollider>();
 
 		raiseSpearSound = FMODUnity.RuntimeManager.CreateInstance(raiseSpearEvent);
-		raiseSpearSound.start();
 	}
 	
 	// Update is called once per frame
@@ -59,6 +58,8 @@ public class SpearThrow : MonoBehaviour {
 		}else if(this.transform.parent != playerCam && this.transform.parent != player && Input.GetButton("Fire1")) {
 			pickUpSpear();
 		}
+			
+		raiseSpearSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
 	}
 
 	void throwSpear() {
@@ -74,7 +75,7 @@ public class SpearThrow : MonoBehaviour {
 		this.transform.localPosition = this.aimPos;
 		this.transform.localEulerAngles = this.aimRot;
 
-//		FMOD_StudioSystem.instance.PlayOneShot("/Weapons/Single", transform.position);
+		raiseSpearSound.start();
 	}
 
 	void lowerSpear() {
