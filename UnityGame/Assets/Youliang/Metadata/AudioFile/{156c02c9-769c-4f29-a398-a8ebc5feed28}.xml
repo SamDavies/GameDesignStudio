@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{156c02c9-769c-4f29-a398-a8ebc5feed28}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.5</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/Teleport6 {12989b35-4fd2-428e-9529-184d90752479}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{60c6d670-bb63-43dd-975d-d64782b59524}</destination>
+        </relationship>
+    </object>
+</objects>

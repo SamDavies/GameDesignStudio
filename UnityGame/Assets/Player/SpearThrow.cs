@@ -18,10 +18,30 @@ public class SpearThrow : MonoBehaviour {
 	public Vector3 aimPos;
 	public Vector3 aimRot;
 
+	public KillYaksQuest killYaksQuest;
+
+	// SOUND
+	[FMODUnity.EventRef]
+	public string raiseSpearEvent;
+	FMOD.Studio.EventInstance raiseSpearSound;
+
+	void StopAllPlayerEvents() {
+		FMOD.Studio.Bus playerBus = FMODUnity.RuntimeManager.GetBus("bus:/player");
+		playerBus.stopAllEvents(FMOD.Studio.STOP_MODE.IMMEDIATE);
+	}
+
+	void OnDestroy() {
+		StopAllPlayerEvents();
+		raiseSpearSound.release();
+	}
+
 	// Use this for initialization
 	void Start () {
 		rigidbody = GetComponent<Rigidbody>();
 		collider = GetComponent<CapsuleCollider>();
+
+		raiseSpearSound = FMODUnity.RuntimeManager.CreateInstance(raiseSpearEvent);
+		raiseSpearSound.start();
 	}
 	
 	// Update is called once per frame
@@ -53,6 +73,8 @@ public class SpearThrow : MonoBehaviour {
 		this.transform.parent = playerCam;
 		this.transform.localPosition = this.aimPos;
 		this.transform.localEulerAngles = this.aimRot;
+
+//		FMOD_StudioSystem.instance.PlayOneShot("/Weapons/Single", transform.position);
 	}
 
 	void lowerSpear() {
@@ -87,7 +109,10 @@ public class SpearThrow : MonoBehaviour {
 
 			this.transform.parent = collision.collider.gameObject.transform;
 
-			collision.collider.gameObject.GetComponent<AIYakSimple>().killYak();
+			bool wasYakJustKilled = collision.collider.gameObject.GetComponent<AIYakSimple>().killYak();
+			if(wasYakJustKilled){
+				killYaksQuest.killAYak();
+			}
 		}
 	}
 

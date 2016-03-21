@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{ef2619f7-b189-47f2-b5b2-ee5715cec8b0}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.32766439909297052</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/Bellish_singlehit_1 {9929c13c-9717-43e3-aa3c-68f4c4942cb8}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{d3f69360-b524-4009-9658-c9f1079637ac}</destination>
+        </relationship>
+    </object>
+</objects>

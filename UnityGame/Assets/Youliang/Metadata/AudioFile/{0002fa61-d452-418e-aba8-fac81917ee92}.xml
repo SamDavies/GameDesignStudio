@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{0002fa61-d452-418e-aba8-fac81917ee92}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.64396825396825397</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/Heartbeat_2 {683cf5ff-9fc9-4f13-87e8-b24f1a13f20e}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{f95f09f3-ff44-4248-a7ff-f1e50523192b}</destination>
+        </relationship>
+    </object>
+</objects>

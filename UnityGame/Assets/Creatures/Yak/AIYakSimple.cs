@@ -34,9 +34,11 @@ public class AIYakSimple : AIYakAbstract {
 		}
 	}
 
-	public void killYak(){
+	public bool killYak(){
+		bool wasJustKilled = isAlive;
 		isAlive = false;
 		animator.SetBool("isAlive", isAlive);
+		return wasJustKilled;
 	}
 
 	public bool isYakRunningAway() {

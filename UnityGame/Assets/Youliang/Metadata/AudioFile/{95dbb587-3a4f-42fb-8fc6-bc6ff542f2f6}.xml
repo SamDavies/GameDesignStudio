@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{95dbb587-3a4f-42fb-8fc6-bc6ff542f2f6}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.7417233560090701</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/WeaponGetSFX {53059c1b-077a-4df4-a98f-a113fc83f3e7}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{48443e88-07e2-4093-b32b-4f15809d6b5f}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{443b9525-d884-4665-be83-dfb7b36cd90c}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.41999999999999998</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/CuttingFlesh3 {3b34930a-269d-465c-8853-d4d03e0472f6}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{48443e88-07e2-4093-b32b-4f15809d6b5f}</destination>
+        </relationship>
+    </object>
+</objects>

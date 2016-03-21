@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{2b36ce40-abae-45b7-b2da-d0db0d1040ac}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>26</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/Drone_2 {26a5f19d-341e-4d58-b8c6-28ef90114ae2}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{466a3351-0f85-42c8-b977-432b034b778f}</destination>
+        </relationship>
+    </object>
+</objects>
