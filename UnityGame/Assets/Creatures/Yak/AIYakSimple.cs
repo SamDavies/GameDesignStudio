@@ -12,8 +12,33 @@ public class AIYakSimple : AIYakAbstract {
 	private YakRunAway yakRunAway;
 	private YakFollowWaypoints yakFollowWaypoints;
 
+	// SOUND
+	[FMODUnity.EventRef]
+	public string yakAliveEvent;
+	FMOD.Studio.EventInstance yakAliveSound;
+
+	// SOUND
+	[FMODUnity.EventRef]
+	public string yakDeathEvent;
+	FMOD.Studio.EventInstance yakDeathSound;
+
+	private Rigidbody cachedRigidBody;
+
+	void OnDestroy() {
+		yakAliveSound.release();
+	}
+
 	// Use this for initialization
 	void Start () {
+
+		cachedRigidBody = GetComponent<Rigidbody>();
+		yakAliveSound = FMODUnity.RuntimeManager.CreateInstance(yakAliveEvent);
+
+		yakAliveSound.setParameterValue("Distance", 0.0f);
+		yakAliveSound.start();
+
+		yakDeathSound = FMODUnity.RuntimeManager.CreateInstance(yakDeathEvent);
+
 		yakRunAway = new YakRunAway(this, runAwayStepSize);
 		yakFollowWaypoints = new YakFollowWaypoints(this);
 
@@ -32,6 +57,9 @@ public class AIYakSimple : AIYakAbstract {
 
 			currentBehavouir.doNextAction();
 		}
+			
+		yakAliveSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, cachedRigidBody));
+		yakDeathSound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject, cachedRigidBody));
 	}
 
 	public bool killYak(){
@@ -39,6 +67,8 @@ public class AIYakSimple : AIYakAbstract {
 		isAlive = false;
 		animator.SetBool("isAlive", isAlive);
 		agent.enabled = false;
+		yakAliveSound.setPaused(true);
+		yakDeathSound.start();
 		return wasJustKilled;
 	}
 

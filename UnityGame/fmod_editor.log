@@ -25,8 +25,6 @@
 [LOG] Thread::initThread                       : Initializing FMOD Studio bank load thread.  priority 0
 [LOG] Thread::initThread                       : - Stacksize 65536.  Stack pointer 0x0 : usesemaphore = 0 : sleeptime = 1
 [LOG] Thread::callback                         : * FMOD Studio bank load thread started
-[WRN] Output::RingBuffer::read                 : Buffer starvation detected, requested 8192 bytes, only 0 bytes available.
-[WRN] Output::RingBuffer::read                 : Buffer starvation detected, requested 8192 bytes, only 0 bytes available.
 [LOG] Thread::callback                         : * FMOD Studio bank load thread finished
 [LOG] Thread::close                            : FMOD Studio bank load thread thread destroyed
 [LOG] Thread::callback                         : * FMOD Studio sample load thread finished

@@ -14,7 +14,7 @@
             <value>$(AUDIO_BIN_DIR)/Bellish {ce16563c-4af6-4976-84a9-b181556369e0}.wav</value>
         </property>
         <relationship name="container">
-            <destination>{d3f69360-b524-4009-9658-c9f1079637ac}</destination>
+            <destination>{60c6d670-bb63-43dd-975d-d64782b59524}</destination>
         </relationship>
     </object>
 </objects>
