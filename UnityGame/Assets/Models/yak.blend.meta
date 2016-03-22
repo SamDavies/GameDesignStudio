@@ -56,6 +56,9 @@ ModelImporter:
     4300000: Cube
     7400000: Default Take
     7400002: ArmatureAction
+    7400004: YakDeath
+    7400006: YakDeath_001
+    7400008: Walk
     9500000: //RootNode
     13700000: Cube
   materials:
