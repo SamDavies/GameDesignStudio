@@ -5,7 +5,7 @@
             <value>Yak</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="mixer">
             <destination>{6488bb7e-e641-432b-8642-9178c563507f}</destination>
@@ -150,7 +150,6 @@
     <object class="MixerBusEffectChain" id="{176569b8-ba46-44c3-994b-f5ccfcd16ae9}">
         <relationship name="effects">
             <destination>{31f4e255-80f0-4e83-aef1-36335569461d}</destination>
-            <destination>{42f3abb5-04b9-4de8-a958-7f09b912aec8}</destination>
             <destination>{b22adca2-e827-45d0-9788-95ca20ebae32}</destination>
         </relationship>
     </object>
@@ -271,10 +270,9 @@
     </object>
     <object class="MixerBusPanner" id="{dc6093c0-6438-432d-9e0d-fc4f3f978b99}"/>
     <object class="MixerBusFader" id="{31f4e255-80f0-4e83-aef1-36335569461d}"/>
-    <object class="SpatialiserEffect" id="{42f3abb5-04b9-4de8-a958-7f09b912aec8}"/>
     <object class="MixerSend" id="{b22adca2-e827-45d0-9788-95ca20ebae32}">
         <property name="inputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="mixerReturn">
             <destination>{47672313-04c8-40a4-8421-5443718a97e9}</destination>

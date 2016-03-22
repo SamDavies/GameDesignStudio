@@ -20,7 +20,7 @@ public class KillYaksQuest : Quest {
 
 	public void killAYak() {
 		numYaksKilled += 1;
-		sun.intensity = 1.0f * (((numYaksToKill - (1.0f * numYaksKilled))/numYaksToKill));
+//		sun.intensity = 1.0f * (((numYaksToKill - (1.0f * numYaksKilled))/numYaksToKill));
 	}
 
 	public bool isComplete() {

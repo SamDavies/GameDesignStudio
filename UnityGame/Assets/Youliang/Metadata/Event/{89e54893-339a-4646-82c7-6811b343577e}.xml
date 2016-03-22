@@ -5,7 +5,7 @@
             <value>GeneralAmbience</value>
         </property>
         <property name="outputFormat">
-            <value>0</value>
+            <value>1</value>
         </property>
         <relationship name="mixer">
             <destination>{78912ab3-53ed-4843-88ee-f28386af0631}</destination>
@@ -76,7 +76,7 @@
     </object>
     <object class="GroupTrack" id="{1cfafeed-1fc7-48eb-94a4-ce594b33236b}">
         <relationship name="modules">
-            <destination>{936a769a-8de4-48d7-9904-d7e69c6a0e1e}</destination>
+            <destination>{182569ea-32c0-48a5-8d62-093ceb7cf085}</destination>
         </relationship>
         <relationship name="mixerGroup">
             <destination>{1307af77-7ee6-4b48-ade5-52518a2f942a}</destination>
@@ -96,13 +96,13 @@
             <value>20</value>
         </property>
         <relationship name="modules">
-            <destination>{936a769a-8de4-48d7-9904-d7e69c6a0e1e}</destination>
             <destination>{c8fbf767-b40c-4da7-8ea4-5a44b71e3fdc}</destination>
+            <destination>{182569ea-32c0-48a5-8d62-093ceb7cf085}</destination>
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{036edb39-448f-4fe4-a550-8f4b9c1ef021}">
         <property name="volume">
-            <value>7</value>
+            <value>4</value>
         </property>
         <relationship name="effectChain">
             <destination>{d334080b-1cdb-4801-ac27-f47c036d91f9}</destination>
@@ -147,10 +147,10 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>2</value>
+            <value>3.4000000000000004</value>
         </property>
         <property name="volume">
-            <value>-0.5</value>
+            <value>1</value>
         </property>
         <property name="looping">
             <value>true</value>
@@ -159,7 +159,7 @@
             <destination>{a50ccce9-dcc4-4cbe-8e1d-cd3b9222f68a}</destination>
         </relationship>
         <relationship name="sounds">
-            <destination>{a3935042-ee9b-485d-bc64-e0a7d3ef1cc9}</destination>
+            <destination>{04b8917a-e3dd-40a1-9a86-3852e1fb79ed}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{8e3e523a-536c-4e3a-b164-32567bce9368}">
@@ -179,23 +179,26 @@
             <destination>{036edb39-448f-4fe4-a550-8f4b9c1ef021}</destination>
         </relationship>
     </object>
-    <object class="SingleSound" id="{936a769a-8de4-48d7-9904-d7e69c6a0e1e}">
+    <object class="SingleSound" id="{182569ea-32c0-48a5-8d62-093ceb7cf085}">
         <property name="start">
             <value>0</value>
         </property>
         <property name="length">
-            <value>2</value>
+            <value>4.2000000000000002</value>
+        </property>
+        <property name="volume">
+            <value>6.5</value>
         </property>
         <property name="looping">
             <value>true</value>
         </property>
         <relationship name="audioFile">
-            <destination>{25fef931-9e79-4459-b7b6-d08ae1149794}</destination>
+            <destination>{fc99b6da-9a26-462f-ab72-426db3154a2c}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{1307af77-7ee6-4b48-ade5-52518a2f942a}">
         <property name="volume">
-            <value>-11</value>
+            <value>5</value>
         </property>
         <property name="name">
             <value>Audio 2</value>
@@ -251,6 +254,7 @@
         <relationship name="effects">
             <destination>{d3a55082-ff75-4177-ab97-0ae493684438}</destination>
             <destination>{ac356e28-403c-43d7-9cc6-b86fae1d9922}</destination>
+            <destination>{d75c1f71-fbf6-4f12-99f1-3c350dd4b0a6}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{7ff0c933-3421-41fc-a9d6-bdc860346723}"/>
@@ -263,15 +267,12 @@
             <value>21</value>
         </property>
     </object>
-    <object class="SingleSound" id="{a3935042-ee9b-485d-bc64-e0a7d3ef1cc9}">
+    <object class="SingleSound" id="{04b8917a-e3dd-40a1-9a86-3852e1fb79ed}">
         <property name="volume">
-            <value>9</value>
-        </property>
-        <property name="pitch">
-            <value>-1.80000007</value>
+            <value>10</value>
         </property>
         <relationship name="audioFile">
-            <destination>{219d719d-0b77-42d5-8f58-514706aa7eb4}</destination>
+            <destination>{5d264b38-53a9-4325-9cb4-1a5068a3ec35}</destination>
         </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{1ef0c83a-9939-4111-a337-d782ec795498}">
@@ -312,7 +313,7 @@
             <value>7.4482758620689671</value>
         </property>
         <property name="value">
-            <value>11217.3916</value>
+            <value>4150.00098</value>
         </property>
         <property name="curveShape">
             <value>0.5</value>
@@ -340,7 +341,7 @@
             <value>14.524137931034481</value>
         </property>
         <property name="value">
-            <value>8239.12988</value>
+            <value>4150.00098</value>
         </property>
         <property name="curveShape">
             <value>0.5</value>
@@ -432,7 +433,7 @@
             <value>0.33103448275862069</value>
         </property>
         <property name="value">
-            <value>8.40584278</value>
+            <value>10</value>
         </property>
         <property name="curveShape">
             <value>0.808556557</value>
@@ -446,7 +447,7 @@
             <value>6.2482758620689651</value>
         </property>
         <property name="value">
-            <value>-0.853292465</value>
+            <value>4.95386124</value>
         </property>
         <property name="curveShape">
             <value>0.5</value>
@@ -460,7 +461,7 @@
             <value>7.2827586206896555</value>
         </property>
         <property name="value">
-            <value>8.40584278</value>
+            <value>10</value>
         </property>
         <property name="curveShape">
             <value>0.5</value>
@@ -474,7 +475,7 @@
             <value>14.317241379310344</value>
         </property>
         <property name="value">
-            <value>0</value>
+            <value>7.36715412</value>
         </property>
         <property name="curveShape">
             <value>0.5</value>
@@ -488,17 +489,28 @@
             <value>19.737931034482756</value>
         </property>
         <property name="value">
-            <value>2.01801014</value>
+            <value>10</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{d3a55082-ff75-4177-ab97-0ae493684438}"/>
     <object class="MixerSend" id="{ac356e28-403c-43d7-9cc6-b86fae1d9922}">
         <property name="inputFormat">
-            <value>0</value>
+            <value>1</value>
         </property>
         <relationship name="mixerReturn">
             <destination>{47672313-04c8-40a4-8421-5443718a97e9}</destination>
         </relationship>
+    </object>
+    <object class="ParamEqEffect" id="{d75c1f71-fbf6-4f12-99f1-3c350dd4b0a6}">
+        <property name="centreFrequency">
+            <value>380</value>
+        </property>
+        <property name="gain">
+            <value>-14</value>
+        </property>
+        <property name="bandwidth">
+            <value>2.64999986</value>
+        </property>
     </object>
     <object class="MixerBusFader" id="{fcdc748b-4c4f-4a38-9504-7a3a3c213056}"/>
     <object class="SFXReverbEffect" id="{152d2692-84d0-478a-94bd-3a74bc5a5dd2}">
@@ -535,7 +547,10 @@
             <value>2200</value>
         </property>
         <property name="gain">
-            <value>14</value>
+            <value>7.5</value>
+        </property>
+        <property name="bandwidth">
+            <value>1.29999995</value>
         </property>
         <relationship name="modulators">
             <destination>{88cdb3d0-f489-4d65-a6a5-364a486b4eee}</destination>
@@ -639,7 +654,7 @@
             <value>1000</value>
         </property>
         <property name="value">
-            <value>160</value>
+            <value>90</value>
         </property>
     </object>
     <object class="FloatPluginParameter" id="{174f1843-dcc7-4c6b-bf26-54d072abbcf4}">
