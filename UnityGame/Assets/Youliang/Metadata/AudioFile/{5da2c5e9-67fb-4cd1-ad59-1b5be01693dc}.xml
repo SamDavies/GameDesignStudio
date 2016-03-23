@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.07.00">
+    <object class="AudioFile" id="{5da2c5e9-67fb-4cd1-ad59-1b5be01693dc}">
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>20.840612244897958</value>
+        </property>
+        <property name="audioFilePath">
+            <value>$(AUDIO_BIN_DIR)/TaverBGM {e3efb78b-6738-4e3e-8f8a-e760ce411fa9}.wav</value>
+        </property>
+        <relationship name="container">
+            <destination>{90f5f914-8395-4f8a-a2ca-96b6c24fc0e2}</destination>
+        </relationship>
+    </object>
+</objects>

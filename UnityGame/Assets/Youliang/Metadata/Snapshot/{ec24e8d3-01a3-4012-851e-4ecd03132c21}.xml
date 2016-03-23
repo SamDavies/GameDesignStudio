@@ -72,7 +72,7 @@
             <value>value</value>
         </property>
         <property name="value">
-            <value>3600</value>
+            <value>1200</value>
         </property>
         <relationship name="automatableObject">
             <destination>{3a31ae6d-f319-49cf-86c8-024c8b3365c5}</destination>
