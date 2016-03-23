@@ -6,7 +6,7 @@ public class SoundEmitter : MonoBehaviour {
 	// SOUND
 	[FMODUnity.EventRef]
 	public string soundEvent;
-	FMOD.Studio.EventInstance theSound;
+	public FMOD.Studio.EventInstance theSound;
 
 	private Rigidbody cachedRigidBody;
 
