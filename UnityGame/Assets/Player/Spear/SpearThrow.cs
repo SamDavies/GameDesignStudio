@@ -67,6 +67,8 @@ public class SpearThrow : MonoBehaviour {
 		this.rigidbody.AddRelativeForce(Vector3.up * throwPower);
 		this.rigidbody.useGravity = true;
 		this.collider.enabled = true;
+
+		raiseSpearSound.start();
 	}
 
 	void raiseSpear() {
